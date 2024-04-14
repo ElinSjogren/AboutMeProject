@@ -40,13 +40,6 @@ export default{
   justify-content: center;
 }
 }
-img{
-  animation: fade-in linear;
-  animation-timeline: view();
-}
-@keyframes fade-in{
-  from {scale: .8; opacity: 0;}
-  to {scale: 1; opacity: 1;}
-}
+
 
 </style>

@@ -1,9 +1,9 @@
 <template>
   <div class="galleryContainer">
     <h1>Hello:)</h1>
-    {{ allImages }}
-    <div class="imgPlace">
-      <img v-for="path in allImages" src="path">
+    
+    <div v-for="path in allImages" class="">        
+        <img  :src=path>
     </div>
   </div>
 </template>
@@ -13,7 +13,7 @@ import { mapState } from 'pinia';
 export default{
     data(){
         return{
-            
+            imgSrc:"/src/assets/paintings/img1.jpg"
         }
     },
     components:{
@@ -36,7 +36,28 @@ export default{
 }
 </script>
 <style>
-
+.imgFrame{
+  width: fit-content;
+  height: fit-content;
+}
+img{
+  margin:auto;
+  max-height:500px;
+  border-radius: 3px;
+}
+img{
+  animation: fade-in linear;
+  animation-timeline: view();
+}
+@keyframes fade-in{
+  from {scale: .5; opacity: 0;}
+  to {scale: 1; opacity: 1;}
+}
+.imgPlace{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .galleryContainer{
   
 }
