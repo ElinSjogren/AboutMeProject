@@ -1,0 +1,15 @@
+<template>
+  <div class="contactContainer">
+
+  </div>
+</template>
+<script>
+</script>
+<style>
+.contactContainer{
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  box-shadow: 0px 0px 25px 15px rgb(134, 255, 35);
+}
+</style>
