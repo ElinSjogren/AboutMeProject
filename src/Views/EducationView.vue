@@ -1,9 +1,11 @@
 <template>
   <div class="educationContainer">
-    <p>ppfågkpgjpj</p>
+    <p>{{ educaton }}</p>
   </div>
 </template>
 <script>
+import { useInformationStore } from '@/Store/InformationStore.js';
+import { mapState } from 'pinia';
 export default{
     data(){
         return{
@@ -14,7 +16,12 @@ export default{
         
 
     },
-    computed:{}
+    computed:{
+      ...mapState(useInformationStore, ['educaton']),
+      educaton(){
+        return this.educaton[0]
+      }
+    }
        
 }
 </script>
