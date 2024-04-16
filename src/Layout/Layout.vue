@@ -1,8 +1,8 @@
 <template>
   <div class="dafaultLayout">
       <header id="DefaultHeader">
-        <h1 class="text-center">Welcome!</h1>
-          <nav class="nav nav-center">
+        <h1 class="text-center">Elin Sjögren</h1>
+          <nav class="nav ">
               <RouterLink to="/">Home</RouterLink>
               <RouterLink to="/education">Education</RouterLink>
               <RouterLink to="/gallery">Gallery</RouterLink>
@@ -34,10 +34,24 @@ export default{
 }
 </script>
 <style>
-@media screen and (min-width: 720px) {
-  .viewContent{
+.viewContent{
   display: flex;
   justify-content: center;
+  width:80vw;
+  margin:auto;
+
+}
+header{
+  margin-bottom: 3rem;
+}
+nav{
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 720px) {
+
+header{
+  padding:2rem;
 }
 }
 
