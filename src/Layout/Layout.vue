@@ -5,8 +5,8 @@
           <nav class="nav ">
               <RouterLink to="/">Home</RouterLink>
               <RouterLink to="/education">Education</RouterLink>
-              <RouterLink to="/contact">Contact me</RouterLink>
               <RouterLink to="/experience">Experience</RouterLink>
+              <RouterLink to="/contact">Contact</RouterLink>
               <RouterLink to="/gallery">Gallery</RouterLink>
           </nav>   
       </header>

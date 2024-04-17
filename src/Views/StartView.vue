@@ -5,20 +5,18 @@
     <div class="startIntro">
       <img id="profilPic" src="../assets/private/profil.jpg" alt="profilPicture">
       <div class="fastFact">
-        <ul>
-          <li>
-            Name: Elin Sjögren
-          </li>
-          <li>
-            Age: 30
-          </li>
-          <li>
-            Live: Gislaved, SWE
-          </li>
-          <li>
-            Family: My husband Simon and our two cats.
-          </li>
-        </ul>
+          <p>
+            <i class="bi bi-star-fill"></i> Name: Elin Sjögren
+          </p>
+          <p>
+            <i class="bi bi-star-fill"></i>Age: 30
+          </p>
+          <p>
+            <i class="bi bi-star-fill"></i>Living: Gislaved, SWE
+          </p>
+          <p>
+            <i class="bi bi-star-fill"></i> Family: My husband Simon and our two cats.
+          </p>
       </div>
     </div>
       <p>
@@ -53,23 +51,14 @@ export default{
 }
 </script>
 <style>
-@media screen and (min-width: 950px) {
-
-  .startIntro{
-    display: flex;
-  }
-
-}
 .fastFact{
-  border:1px rgb(9, 224, 195) solid;
+  border:1px rgb(9, 224, 195) sodivd;
   border-radius: 1rem;
-  padding:1rem;
+  padding-top:1rem;
+  padding-bottom: 1rem;
   margin: 1rem;
 }
-ul li{
-  text-decoration: none;
 
-}
 #profilPic{
   max-height: 10rem;
   margin: 1rem;
@@ -79,5 +68,22 @@ ul li{
   height: fit-content;
   padding: 2rem;
   box-shadow: 0px 0px 25px 8px rgb(9, 224, 195);
+}
+@media screen and (max-width: 480px) {
+.startContainer{
+  padding:1rem;
+  width:95vw;
+}
+#profilPic{
+  margin: 0px;
+}
+
+}
+@media screen and (min-width: 950px) {
+
+  .startIntro{
+    display: flex;
+  }
+
 }
 </style>
