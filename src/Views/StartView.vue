@@ -6,16 +6,16 @@
       <img id="profilPic" src="../assets/private/profil.jpg" alt="profilPicture">
       <div class="fastFact">
           <p>
-            <i class="bi bi-star-fill"></i> Name: Elin Sjögren
+            <i class="bi bi-person-fill"></i> Name: Elin Sjögren
           </p>
           <p>
-            <i class="bi bi-star-fill"></i>Age: 30
+            <i class="bi bi-star-fill"></i> Age: 30
           </p>
           <p>
-            <i class="bi bi-star-fill"></i>Living: Gislaved, SWE
+            <i class="bi bi-house-door-fill"></i> Living: Gislaved, SWE
           </p>
           <p>
-            <i class="bi bi-star-fill"></i> Family: My husband Simon and our two cats.
+            <i class="bi bi-heart-fill"></i> Family: My husband Simon and our two cats.
           </p>
       </div>
     </div>
@@ -52,10 +52,9 @@ export default{
 </script>
 <style>
 .fastFact{
-  border:1px rgb(9, 224, 195) sodivd;
+  border:1px rgb(9, 224, 195) solid;
   border-radius: 1rem;
-  padding-top:1rem;
-  padding-bottom: 1rem;
+  padding:1rem;
   margin: 1rem;
 }
 

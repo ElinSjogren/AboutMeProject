@@ -1,13 +1,12 @@
 <template>
   <div class="experienceContainer">
-    <p>My work experience has mainly revolved around customer service. An important lesson that I have taken with me is that communication is not as simple as you might think. You can speak the same language but still not understand each other. The importance of asking questions and ensuring that you understand your customer is paramount </p>
+    <p>My work experience has mainly revolved around customer service. An important lesson that I have taken with me is that communication is not as simple as you might think. You can speak the same language but still not understand each other. The importance of asking questions and ensuring that you understand your customer is paramount. </p>
     <div class="tableWrapper"></div>
     <div class="row tableHeadings">
-      <div class="col">Level</div>
-      <div class="col">School</div>
-      <div class="col">Field</div>
-      <div class="col">Period</div>
-      <div class="col">Started year</div>
+      <div class="col">Workplace</div>
+      <div class="col">Position</div>
+      <div class="col">Duration</div>
+      <div class="col">Start year</div>
     </div>
     <div v-for="w in allWorkExperience" class="row rowsOfData">
       <div class="col dataCell" data-cell="Workplace">{{w.Workplace}}</div>

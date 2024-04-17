@@ -1,5 +1,5 @@
 <template>
-  <div class="contactContainer">
+  <div class="contactContainer text-center">
     <p>Please feel free to contact me if you are interested in collaboration. </p>
     <a href="https://www.linkedin.com/in/elin-sj%C3%B6gren-a0b6a21b9/" target="_blank">Send me a message <i class="bi bi-envelope-fill"></i></a>
   </div>
