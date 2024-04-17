@@ -34,15 +34,15 @@ export default{
 }
 </script>
 <style>
+  header{
+    margin-bottom: 1rem;
+  }
 .viewContent{
   display: flex;
   justify-content: center;
   width:80vw;
   margin:auto;
-
-}
-header{
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 nav{
   display: flex;
@@ -51,7 +51,7 @@ nav{
 @media screen and (min-width: 720px) {
 
 header{
-  padding:2rem;
+  padding:1rem;
 }
 }
 

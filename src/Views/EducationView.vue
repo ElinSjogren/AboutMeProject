@@ -1,7 +1,25 @@
 <template>
   <div class="educationContainer">
-    <p>{{ educaton }}</p>
+    <table class="">
+        <tr>
+          <th class="col">Level</th>
+          <th class="col">School</th>
+          <th class="col">Field</th>
+          <th class="col">Period</th>
+          <th class="col">Started</th>
+        </tr>
+        <tr v-for="e in allEducaton"  class="row">
+          <td class="col">{{e.schoolLevel}}</td>
+          <td class="col">{{e.SchoolName}}</td>
+          <td class="col">{{e.field}}</td>
+          <td class="col">{{e.period}}</td>
+          <td class="col">{{e.started}}</td>
+        </tr>
+    </table>
     
+      {{ allEducaton }}
+     
+    <p ></p>
   </div>
 </template>
 <script>
@@ -19,8 +37,8 @@ export default{
     },
     computed:{
       ...mapState(useInformationStore, ['educaton']),
-      educaton(){
-        return this.educaton[0]
+      allEducaton(){
+        return this.educaton
       }
     }
        
@@ -30,6 +48,8 @@ export default{
 .educationContainer{
   width: 80vw;
   height: fit-content;
-  box-shadow: 0px 0px 25px 15px rgb(255, 0, 0);
+  padding: 2rem;
+  box-shadow: 0px 0px 25px 8px rgb(255, 0, 0);
 }
+
 </style>

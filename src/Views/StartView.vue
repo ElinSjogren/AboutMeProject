@@ -78,6 +78,6 @@ ul li{
   width: 60vw;
   height: fit-content;
   padding: 2rem;
-  box-shadow: 0px 0px 25px 15px rgb(9, 224, 195);
+  box-shadow: 0px 0px 25px 8px rgb(9, 224, 195);
 }
 </style>
