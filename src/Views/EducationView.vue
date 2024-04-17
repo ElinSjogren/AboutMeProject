@@ -1,6 +1,7 @@
 <template>
   <div class="educationContainer">
     <p>{{ educaton }}</p>
+    
   </div>
 </template>
 <script>
