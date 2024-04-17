@@ -27,7 +27,7 @@ export const useInformationStore = defineStore('infos', {
             started: 2014
           },
           {
-            schoolLevel: "University",
+            schoolLevel: "Higher Vocational Education",
             SchoolName: "Jonkoping University",
             field: "Webdeveloper .NET",
             period: "2 years [Ongoing!]",
@@ -84,6 +84,12 @@ export const useInformationStore = defineStore('infos', {
                   position: "Customer Service and Office Assistent",
                   duration: "Ongoing",
                   startyear: 2020,
+                },
+                {
+                  Workplace: "Delacroy",
+                  position: "Internship as a webdeveloper",
+                  duration: "Ongoing",
+                  startyear: 2023,
                 },
               ],
 

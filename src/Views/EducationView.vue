@@ -1,5 +1,6 @@
 <template>
   <div class="educationContainer">
+    <p>My education from high school to my  current "Higher Vocational Education". Said to be "form of education that combines theoretical and practical studies in close cooperation with employers and industry". </p>
     <div class="tableWrapper"></div>
     <div class="row tableHeadings">
       <div class="col">Level</div>
@@ -46,7 +47,7 @@ export default{
 .tableWrapper ,
 .rowsOfData{
 display: grid;
-padding:3px;
+padding:5px;
 }
 .tableHeadings{
   display:none;
@@ -67,7 +68,7 @@ padding:3px;
   width: 80vw;
   height: fit-content;
   padding: 2rem;
-  box-shadow: 0px 0px 25px 8px rgb(255, 0, 0);
+  box-shadow: 0px 0px 25px 8px rgb(0, 183, 255);
 }
 
 </style>
