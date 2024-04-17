@@ -1,23 +1,20 @@
 <template>
   <div class="educationContainer">
-    <table class="">
-        <tr>
-          <th class="col">Level</th>
-          <th class="col">School</th>
-          <th class="col">Field</th>
-          <th class="col">Period</th>
-          <th class="col">Started</th>
-        </tr>
-        <tr v-for="e in allEducaton"  class="row">
-          <td class="col">{{e.schoolLevel}}</td>
-          <td class="col">{{e.SchoolName}}</td>
-          <td class="col">{{e.field}}</td>
-          <td class="col">{{e.period}}</td>
-          <td class="col">{{e.started}}</td>
-        </tr>
-    </table>
-    
-      {{ allEducaton }}
+    <div class="tableWrapper"></div>
+    <div class="row tableHeadings">
+      <div class="col">Level</div>
+      <div class="col">School</div>
+      <div class="col">Field</div>
+      <div class="col">Period</div>
+      <div class="col">Started year</div>
+    </div>
+    <div v-for="e in allEducaton" class="row rowsOfData">
+      <div class="col dataCell" data-cell="Level">{{e.schoolLevel}}</div>
+      <div class="col dataCell" data-cell="SchoolName">{{e.SchoolName}}</div>
+      <div class="col dataCell" data-cell="Field">{{e.field}}</div>
+      <div class="col dataCell" data-cell="Period">{{e.period}}</div>
+      <div class="col dataCell" data-cell="Started">{{e.started}}</div>
+    </div>
      
     <p ></p>
   </div>
@@ -45,6 +42,27 @@ export default{
 }
 </script>
 <style>
+@media screen and (max-width: 750px) {
+.tableWrapper ,
+.rowsOfData{
+display: grid;
+padding:3px;
+}
+.tableHeadings{
+  display:none;
+}
+.dataCell::before{
+ content: attr(data-cell)": ";
+ font-weight: 500;
+}
+}
+
+.rowsOfData:nth-child(2n){
+  background-color: rgb(41, 41, 41);
+}
+.tableHeadings{
+  background-color: black;
+}
 .educationContainer{
   width: 80vw;
   height: fit-content;
