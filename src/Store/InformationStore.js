@@ -96,22 +96,22 @@ export const useInformationStore = defineStore('infos', {
             }
           ],
           imgPaths:[
-            "/src/assets/paintings/img1.jpg", 
-            "/src/assets/paintings/img2.jpg", 
-            "/src/assets/paintings/img4.jpg", 
-            "/src/assets/paintings/img5.jpg", 
-            "/src/assets/paintings/img6.jpg", 
-            "/src/assets/paintings/img7.jpg", 
-            "/src/assets/paintings/img8.jpg", 
-            "/src/assets/paintings/img9.jpg", 
-            "/src/assets/paintings/img10.jpg",
-            "/src/assets/paintings/img11.jpg", 
-            "/src/assets/paintings/img12.jpg", 
-            "/src/assets/paintings/img13.jpg", 
-            "/src/assets/paintings/img14.jpg", 
-            "/src/assets/paintings/img15.jpg", 
-            "/src/assets/paintings/img16.jpg", 
-            "/src/assets/paintings/img17.jpg"]
+            "/aboutme/src/assets/paintings/img1.jpg", 
+            "/aboutme/src/assets/paintings/img2.jpg", 
+            "/aboutme/src/assets/paintings/img4.jpg", 
+            "/aboutme/src/assets/paintings/img5.jpg", 
+            "/aboutme/src/assets/paintings/img6.jpg", 
+            "/aboutme/src/assets/paintings/img7.jpg", 
+            "/aboutme/src/assets/paintings/img8.jpg", 
+            "/aboutme/src/assets/paintings/img9.jpg", 
+            "/aboutme/src/assets/paintings/img10.jpg",
+            "/aboutme/src/assets/paintings/img11.jpg", 
+            "/aboutme/src/assets/paintings/img12.jpg", 
+            "/aboutme/src/assets/paintings/img13.jpg", 
+            "/aboutme/src/assets/paintings/img14.jpg", 
+            "/aboutme/src/assets/paintings/img15.jpg", 
+            "/aboutme/src/assets/paintings/img16.jpg", 
+            "/aboutme/src/assets/paintings/img17.jpg"]
         }
     },
     getters: {

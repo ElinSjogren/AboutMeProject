@@ -5,9 +5,9 @@
     <div v-if="loaded"  class="imgFrame">        
         <img v-for="path in allImages" :src=path>
     </div>
+    <div v-else>..loading..
 
-      <div v-else>..loading..</div>
-
+    </div>
   </div>
 </template>
 <script>
@@ -16,7 +16,7 @@ import { mapState } from 'pinia';
 export default{
     data(){
         return{
-            loaded:false
+            loaded:null
         }
     },
     components:{
